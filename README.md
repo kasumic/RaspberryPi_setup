@@ -36,7 +36,7 @@ deb http://ftp.tsukuba.wide.ad.jp/Linux/raspbian/raspbian/ stretch main contrib 
 `sudo apt install vim ntp`
 
 ---
-### NTPサーバの設定  
+### NTPサーバ構築  
 `sudo vim /etc/ntp.conf`
 
 設定前
@@ -63,3 +63,24 @@ restrict 192.168.10.0 mask 255.255.255.0
 
 サービス再起動  
 `sudo systemctl restart ntp.service`
+
+---
+### syslogサーバ構築  
+`sudo vim /etc/rsyslog.conf`
+
+設定前
+```bash:設定前
+# provides UDP syslog reception
+#module(load="imudp")
+#input(type="imudp" port="514")
+```
+
+設定後
+```bash:設定後
+# provides UDP syslog reception
+module(load="imudp")
+input(type="imudp" port="514")
+```
+
+サービス再起動  
+`sudo systemctl restart rsyslog.service`
