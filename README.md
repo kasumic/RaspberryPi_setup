@@ -7,7 +7,11 @@
   * DHCP Server
   * Syslog Server
   
-## Install Commands
+## Setup
+---
+### ホスト名の変更  
+`sudo hostnamectl set-hostname ncg`
+
 ---
 ### レポジトリソースの変更  
 `sudo vi /etc/apt/sources.list`
