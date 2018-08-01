@@ -1,4 +1,4 @@
-# rasberrypi_setup(Master)
+# RaspberryPi_setup(Master)
 ## Server Informations
 - IP Address: 192.168.10.1/24
 - Enabled Services:
