@@ -61,5 +61,5 @@ NTP同期受付設定
 restrict 192.168.10.0 mask 255.255.255.0
 ```
 
-サービス再起動
+サービス再起動  
 `sudo systemctl restart ntp.service`
