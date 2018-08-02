@@ -36,3 +36,12 @@ deb http://ftp.tsukuba.wide.ad.jp/Linux/raspbian/raspbian/ stretch main contrib 
 ---
 ### パッケージインストール  
 `sudo apt install vim ntp`
+
+---
+### Commands
+`man [command]`
+
+`which [command]`
+
+`which ls > which.log`  
+`which shutdown >> which.log`
