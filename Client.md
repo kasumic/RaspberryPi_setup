@@ -70,10 +70,10 @@ server 192.168.10.1
 
 ---
 ### ディスク操作
-- パーティション確認
+- パーティション確認  
 `sudo parted -l`
 
-- パーティショニング
+- パーティショニング  
 `sudo perted /dev/sdb`
 
 `mklabel gpt`
