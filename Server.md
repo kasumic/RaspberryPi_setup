@@ -9,6 +9,15 @@
   
 ## Setup
 ---
+### ネットワーク設定
+`sudo vi /etc/dhcpcd.conf`
+```
+interface eth0
+static ip_address=192.168.10.1/24
+static domain_name_servers=8.8.8.8
+```
+
+---
 ### ホスト名の変更  
 `sudo hostnamectl set-hostname ncg`
 
@@ -88,3 +97,8 @@ input(type="imudp" port="514")
 
 サービス再起動  
 `sudo systemctl restart rsyslog.service`
+
+---
+### NAT Router  
+net.ipv4.ip_forward  
+`sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE`
