@@ -52,7 +52,12 @@ deb http://ftp.tsukuba.wide.ad.jp/Linux/raspbian/raspbian/ stretch main contrib 
 ### NTPの設定
 `sudo vi /etc/ntp.conf`
 
-```bash: 設定後
+```bash:設定後
 server 192.168.10.1
 ```
 
+`sudo vi /etc/rsyslog.conf`
+
+```bash:設定後
+*.* @192.168.10.l:514
+```
