@@ -47,3 +47,12 @@ deb http://ftp.tsukuba.wide.ad.jp/Linux/raspbian/raspbian/ stretch main contrib 
 `which shutdown >> which.log`
 
 `echo {1..1000}`
+
+
+### NTPの設定
+`sudo vi /etc/ntp.conf`
+
+```bash: 設定後
+server 192.168.10.1
+```
+
