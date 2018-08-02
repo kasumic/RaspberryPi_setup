@@ -70,16 +70,20 @@ server 192.168.10.1
 
 ---
 ### ディスク操作
-- パーティション確認  
+パーティション確認  
 `sudo parted -l`
 
-- パーティショニング  
+パーティショニング  
 `sudo perted /dev/sdb`
 
+ラベル作成  
 `mklabel gpt`
 
+Primaryパーティション作成、全ての領域を使う  
 `mkpart primary 0 100%`
 
+LVMを有効化  
 `set 1 lvm on`
 
+partedの終了  
 `quit`
