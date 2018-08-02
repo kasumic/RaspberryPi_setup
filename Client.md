@@ -65,5 +65,21 @@ server 192.168.10.1
 ```
 
 ### syslog確認
-`logger 192.168.10.1 test-message`
+`logger test-message`
 
+
+---
+### ディスク操作
+- パーティション確認
+`sudo parted -l`
+
+- パーティショニング
+`sudo perted /dev/sdb`
+
+`mklabel gpt`
+
+`mkpart primary 0 100%`
+
+`set 1 lvm on`
+
+`quit`
