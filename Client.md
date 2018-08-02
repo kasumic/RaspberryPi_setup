@@ -46,4 +46,4 @@ deb http://ftp.tsukuba.wide.ad.jp/Linux/raspbian/raspbian/ stretch main contrib 
 `which ls > which.log`  
 `which shutdown >> which.log`
 
-`for i in `1..1000`; do echo $i; done`
+`echo {1..1000}`
