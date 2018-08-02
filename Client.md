@@ -56,6 +56,7 @@ deb http://ftp.tsukuba.wide.ad.jp/Linux/raspbian/raspbian/ stretch main contrib 
 server 192.168.10.1
 ```
 
+### rsysylog送信設定
 `sudo vi /etc/rsyslog.conf`
 
 ```bash:設定後
