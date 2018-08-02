@@ -87,3 +87,6 @@ LVMを有効化
 
 partedの終了  
 `quit`
+
+---
+### LVM操作
